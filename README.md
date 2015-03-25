@@ -22,7 +22,7 @@ pod "OSXmlReader"
 
 ## Author
 
-ondra, ostocek@gmail.com
+Ondrej Stocek
 
 ## License
 
