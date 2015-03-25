@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'OSXmlReader', :exclusive => true do
+  pod "OSXmlReader", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "OSXmlReader", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
