@@ -17,14 +17,12 @@ Pod::Spec.new do |s|
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/OSXmlReader"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/c4tto/OSXmlReader"
   s.license          = 'MIT'
-  s.author           = { "ondra" => "ostocek@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/OSXmlReader.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Ondrej Stocek" => "ostocek@gmail.com" }
+  s.source           = { :git => "https://github.com/c4tto/OSXmlReader.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -32,7 +30,6 @@ Pod::Spec.new do |s|
     'OSXmlReader' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.dependency 'GDataXML-HTML', '~> 1.2.0'
 end
