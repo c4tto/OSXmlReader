@@ -1,16 +1,16 @@
 //
-//  NSObject+OSXmlKeyDeterminer.m
+//  NSObject+OSXmlKeyClassDeterminer.m
 //  OSXmlReader
 //
-//  Created by Ondřej Štoček on 25.03.15.
+//  Created by Ondrej Stocek on 25.03.15.
 //
 //
 
 #import <objc/runtime.h>
 
-#import "NSObject+OSXmlKeyDeterminer.h"
+#import "NSObject+OSXmlKeyClassDeterminer.h"
 
-@implementation NSObject (OSXmlKeyDeterminer)
+@implementation NSObject (OSXmlKeyClassDeterminer)
 
 + (Class)classOfKey:(NSString *)key
 {

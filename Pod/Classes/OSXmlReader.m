@@ -9,7 +9,7 @@
 #import <objc/runtime.h>
 
 #import "OSXmlReader.h"
-#import "NSObject+OSXmlKeyDeterminer.h"
+#import "NSObject+OSXmlKeyClassDeterminer.h"
 
 @interface OSXmlReaderField : NSObject
 @property (strong, nonatomic) NSString *name;
