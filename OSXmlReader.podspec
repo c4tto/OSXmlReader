@@ -32,4 +32,9 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'GDataXML-HTML', '~> 1.2.0'
+  s.libraries = "iconv", "xml2"
+  s.requires_arc = true
+  s.xcconfig = {
+	 "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2"
+  }
 end
