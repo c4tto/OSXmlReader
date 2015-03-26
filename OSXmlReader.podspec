@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "OSXmlReader"
   s.version          = "0.1.0"
-  s.summary          = "A short description of OSXmlReader."
+  s.summary          = "XML Reader using GDataXML-HTML"
   s.description      = <<-DESC
                        An optional longer description of OSXmlReader
 
