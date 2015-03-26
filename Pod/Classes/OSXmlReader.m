@@ -96,7 +96,7 @@
     for (NSUInteger i = 0; i < keys.count - 1; ++i) {
         NSString *key = keys[i];
         if (![record valueForKey:key]) {
-            Class class = [[record class] classForKey:key];
+            Class class = [[record class] classOfKey:key];
             if (class) {
                 id value = [[class alloc] init];
                 [record setValue:value forKey:key];
@@ -129,7 +129,7 @@
                 GDataXMLNode *valueNode = valueNodes[0];
                 
                 id value = field.convertBlock ? field.convertBlock(valueNodes, recordNode, self.rootNode) : valueNode.stringValue;
-                Class class = [[record class] classForKeyPath:name];
+                Class class = [[record class] classOfKeyPath:name];
                 if (class && [value isKindOfClass:[NSString class]]) {
                     value = [self convertStringValue:value toType:class];
                 }
